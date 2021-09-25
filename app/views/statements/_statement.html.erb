@@ -1,0 +1,15 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= statement.commenter %>
+</p>
+
+<p>
+  <strong>Statement:</strong>
+  <%= statement.body %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Statement', [statement.article, statement],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>
